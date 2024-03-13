@@ -94,7 +94,7 @@ startIcon1.addEventListener("click",function(){
     yourGuessEasy.value="";
     num = Math.floor(Math.random()*100 + 1);
 })
-
+let num1 = Math.floor(Math.random()*300 + 1);
 function guessNumberMdm(){
     var guess = yourGuessMedium.value;
     console.log(guess);
@@ -103,17 +103,17 @@ function guessNumberMdm(){
         no_of_guesses += 1 ;
         guessedNumbers.push(guess);
         if(totalNumberOfGuess != no_of_guesses){
-            if(guess < num){
+            if(guess < num1){
                 range_mdm.innerText = "Your guess is too low";
                 no_of_guess_mdm.innerText = `No. of guesses: ${no_of_guesses}`;
                 guessedNum_mdm.innerText = `Guessed numbers are : ${guessedNumbers}`
-            }else if(guess > num){
+            }else if(guess > num1){
                 range_mdm.innerText = "Your guess is too High";
                 no_of_guess_mdm.innerText = `No. of guesses: ${no_of_guesses}`;
                 guessedNum_mdm.innerText = `Guessed numbers are : ${guessedNumbers}`
-            }else if(guess == num){
+            }else if(guess == num1){
                 range_mdm.innerText = "Yippie you win !!";
-                no_of_guess_mdm.innerText = `The number was :  ${num}`;
+                no_of_guess_mdm.innerText = `The number was :  ${num1}`;
                 guessedNum_mdm.innerText = `You guessed it in ${no_of_guesses}`;
             }
             yourGuessMedium.value="";
@@ -134,8 +134,9 @@ startIcon2.addEventListener("click",function(){
     guessedNum_mdm.innerText = "";
     yourGuessMedium.value="";
     yourGuessMedium.removeAttribute("disabled","disabled");
-    num = Math.floor(Math.random()*100 + 1);
+    num1 = Math.floor(Math.random()*300 + 1);
 });
+let num2 = Math.floor(Math.random()*100 + 1);
 function guessNumberHrd(){
     var guess = yourGuessHard.value;
     console.log(guess);
@@ -144,17 +145,17 @@ function guessNumberHrd(){
         no_of_guesses += 1 ;
         guessedNumbers.push(guess);
         if(totalNumberOfGuess != no_of_guesses){
-            if(guess < num){
+            if(guess < num2){
                 range_hrd.innerText = "Your guess is too low";
                 no_of_guess_hrd.innerText = `No. of guesses: ${no_of_guesses}`;
                 guessedNum_hrd.innerText = `Guessed numbers are : ${guessedNumbers}`
-            }else if(guess > num){
+            }else if(guess > num2){
                 range_hrd.innerText = "Your guess is too High";
                 no_of_guess_hrd.innerText = `No. of guesses: ${no_of_guesses}`;
                 guessedNum_hrd.innerText = `Guessed numbers are : ${guessedNumbers}`
-            }else if(guess == num){
+            }else if(guess == num2){
                 range_hrd.innerText = "Yippie you win !!";
-                no_of_guess_hrd.innerText = `The number was :  ${num}`;
+                no_of_guess_hrd.innerText = `The number was :  ${num2}`;
                 guessedNum_hrd.innerText = `You guessed it in ${no_of_guesses}`;
             }
             yourGuessHard.value="";
@@ -175,5 +176,5 @@ startIcon3.addEventListener("click",function(){
     guessedNum_hrd.innerText = "";
     yourGuessHard.value="";
     yourGuessHard.removeAttribute("disabled","disabled");
-    num = Math.floor(Math.random()*100 + 1);
+    num2 = Math.floor(Math.random()*400 + 1);
 })
