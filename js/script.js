@@ -136,7 +136,7 @@ startIcon2.addEventListener("click",function(){
     yourGuessMedium.removeAttribute("disabled","disabled");
     num1 = Math.floor(Math.random()*300 + 1);
 });
-let num2 = Math.floor(Math.random()*100 + 1);
+let num2 = Math.floor(Math.random()*400 + 1);
 function guessNumberHrd(){
     var guess = yourGuessHard.value;
     console.log(guess);
